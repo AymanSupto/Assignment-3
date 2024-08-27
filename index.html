@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/5f8da482cf.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#ABEF5F',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @media screen and (max-width:576px) {
+
+            .portfolio .img-3,
+            .vector,
+            .button {
+                display: none;
+            }
+
+            .design,
+            .barn {
+                text-align: center;
+            }
+
+            .navbar-start {
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+            .dropdown {
+                position: relative;
+            }
+
+            .menu-bar {
+                width: 100px;
+                position: absolute;
+                left: -50px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Banner section -->
+    <section class="bg-gradient-to-b from-gray-200 to-white">
+        <header class="lg:w-4/5 lg:mx-auto">
+            <nav>
+                <div class="navbar bg-base-100 bg-gray-200">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow menu-bar">
+                                <li class="text-xl font-semibold"><a>Home</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>portfolio</a></li>
+                                <li><a>Blogs</a></li>
+                                <li><a>Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-center items-center gap-2">
+                            <div class=" btn rounded-full bg-yellow-200">
+                                <i class="fa-solid fa-arrow-right -rotate-45 text-xl "></i>
+                            </div>
+                            <a class=" text-2xl font-bold">Renterio</a>
+                        </div>
+
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li class="font-bold"><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end button">
+                        <a class="btn bg-yellow-200 rounded-full font-bold">Book Consult<i
+                                class="fa-solid rounded-full flex items-center justify-center p-1 text-white bg-black -rotate-45 fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="flex flex-col items-center justify-center space-y-4 lg:space-y-6">
+                <div><img class="w-2/3 mx-auto lg:w-full" src="assets/banner.png" alt=""></div>
+                <div>
+                    <h1 class="text-center font-extrabold lg:text-6xl text-3xl">A barn house of this design has a
+                        striking appearance</h1>
+                </div>
+                <div>
+                    <p class="text-center w-11/12 mx-auto">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents, and large windows that
+                        flood the space with natural light.</p>
+                </div>
+                <div class="flex"><a class="btn rounded-full px-32 lg:px-5 bg-yellow-200">View Details<i
+                            class="fa-solid fa-arrow-right bg-yellow-300 rounded-full p-1 -rotate-45"></i></a></div>
+            </section>
+        </header>
+    </section>
+
+</body>
